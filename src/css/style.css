@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Titillium+Web:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li, ol {
+  list-style: none; }
+
+main h1 {
+  position: absolute;
+  top: 7vh;
+  left: 4vw;
+  font-size: 0; }
+  main h1 strong {
+    font: normal 36px/1.4 'Abril Fatface';
+    color: #BD8F4D;
+    letter-spacing: 1px; }
+  main h1 span {
+    font: normal 12px/1 'Titillium Web';
+    opacity: 0.8;
+    letter-spacing: 2px;
+    color: #BD8F4D; }
+main nav {
+  position: absolute;
+  top: 11vh;
+  right: 4vw;
+  font-size: 0; }
+  main nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    main nav ul li {
+      font: 18px/1 'Titillium Web';
+      padding: 5px 10px;
+      color: #BD8F4D;
+      text-transform: uppercase; }
+
+main section {
+  width: 20vw;
+  height: 65vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  transition: 1s;
+  background: #ddd; }
+  main section article {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red; }
+    main section article .inner {
+      width: 100%;
+      height: 100%;
+      background: #ffff;
+      padding: 5vh 2.5vw 8vh;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: space-between;
+      border-radius: 10px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); }
+      main section article .inner .pic {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        background-color: cyan;
+        background-repeat: no-repeat;
+        background-position: 200%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main section article .inner .pic::before, main section article .inner .pic::after {
+          content: '';
+          display: block;
+          width: inherit;
+          height: inherit;
+          border-radius: inherit;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: inherit;
+          background-repeat: inherit;
+          background-position: center;
+          background-size: cover; }
+        main section article .inner .pic::before {
+          transform: translateY(10%);
+          filter: blur(20px) brightness(1.6); }
+        main section article .inner .pic .dot {
+          width: 3vw;
+          height: 3vw;
+          border-radius: 50%;
+          background: #fff;
+          position: relative;
+          z-index: 3;
+          box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); }
+      main section article .inner .txt {
+        text-align: center;
+        position: relative; }
+        main section article .inner .txt h2 {
+          font: bold 20px/1 'arial';
+          color: #222;
+          margin-bottom: 2vh; }
+        main section article .inner .txt p {
+          font: 12px/1 'arial';
+          color: #777;
+          margin-bottom: 3vh; }
+
+main .btnPrev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20vw, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  main .btnPrev span {
+    font: 11px/1 'arial';
+    color: #fff;
+    transform: translateX(30%);
+    transition: 0.5s; }
+  main .btnPrev::before, main .btnPrev::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: left center;
+    transition: 0.5s; }
+  main .btnPrev::before {
+    transform: rotate(-180deg); }
+  main .btnPrev::after {
+    transform: rotate(180deg); }
+  main .btnPrev:hover span {
+    opacity: 0;
+    transform: translateX(100%); }
+  main .btnPrev:hover::before {
+    transform: rotate(-30deg); }
+  main .btnPrev:hover::after {
+    transform: rotate(30deg); }
+main .btnNext {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(20vw, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  main .btnNext span {
+    font: 11px/1 'arial';
+    color: #fff;
+    transform: translateX(-30%);
+    transition: 0.5s; }
+  main .btnNext::before, main .btnNext::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform-origin: right center;
+    transition: 0.5s; }
+  main .btnNext::before {
+    transform: rotate(180deg); }
+  main .btnNext::after {
+    transform: rotate(-180deg); }
+  main .btnNext:hover span {
+    opacity: 0;
+    transform: translateX(-100%); }
+  main .btnNext:hover::before {
+    transform: rotate(30deg); }
+  main .btnNext:hover::after {
+    transform: rotate(-30deg); }
+
+main > p {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 12px/1 'Titillium Web';
+  color: #BD8F4D;
+  letter-spacing: 2px;
+  opacity: 0.8; }
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: #191919; }
+
+/*# sourceMappingURL=style.css.map */

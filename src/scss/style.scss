@@ -1,0 +1,20 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Titillium+Web:wght@600&display=swap');
+
+
+$dark: #191919;
+$gold: #BD8F4D;
+
+@import './reset';
+
+@import './header';
+@import './panels';
+@import './btns';
+@import './footer';
+
+
+
+main{
+  width: 100%; height: 100vh;
+  background: #191919; 
+}
