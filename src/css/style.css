@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Luckiest+Guy&family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Luckiest+Guy&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ figure nav {
     justify-content: flex-end;
     align-items: center; }
     figure nav ul li {
-      font: 18px/1 'Titillium Web';
+      font: 18px/1 'Luckiest Guy';
       padding: 5px 10px;
       color: #7b9acc;
       text-transform: uppercase; }
@@ -117,7 +117,7 @@ figure .btnPrev {
   align-items: center;
   cursor: pointer; }
   figure .btnPrev span {
-    font: 11px/1 'arial';
+    font: 11px/1 'Luckiest Guy';
     color: #5CC8D7;
     transform: translateX(30%);
     transition: 0.5s; }
