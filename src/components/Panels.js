@@ -6,11 +6,9 @@ function Panels(props){
     <article style={rotatePanel}>
     <div className="inner">
       <div className="pic" style={picImg}>
-        <div className="dot"></div>
       </div>
       <div className="txt">
         <h2>{props.txt}</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       </div>
     </div>
   </article>

@@ -46,7 +46,7 @@ figure {
   position: relative; }
   figure section {
     width: 20vw;
-    height: 65vh;
+    height: 55vh;
     position: absolute;
     left: 50%;
     top: 150%;
@@ -62,8 +62,9 @@ figure {
       figure section article .inner {
         width: 100%;
         height: 100%;
+        position: relative;
         background: #ffff;
-        padding: 5vh 2.5vw 8vh;
+        padding: 5vh 3.0vw 8vh;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -71,9 +72,9 @@ figure {
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); }
         figure section article .inner .pic {
-          width: 15vw;
-          height: 15vw;
-          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          border-radius: 155px;
           background-color: cyan;
           background-repeat: no-repeat;
           background-position: 200%;
@@ -81,7 +82,7 @@ figure {
           display: flex;
           justify-content: center;
           align-items: center; }
-          figure section article .inner .pic::before, figure section article .inner .pic::after {
+          figure section article .inner .pic::after {
             content: '';
             display: block;
             width: inherit;
@@ -94,28 +95,15 @@ figure {
             background-repeat: inherit;
             background-position: center;
             background-size: cover; }
-          figure section article .inner .pic::before {
-            transform: translateY(10%);
-            filter: blur(20px) brightness(1.6); }
-          figure section article .inner .pic .dot {
-            width: 3vw;
-            height: 3vw;
-            border-radius: 50%;
-            background: #fff;
-            position: relative;
-            z-index: 3;
-            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); }
         figure section article .inner .txt {
-          text-align: center;
-          position: relative; }
+          width: 100%;
+          position: relative;
+          text-align: center; }
           figure section article .inner .txt h2 {
-            font: bold 20px/1 'arial';
+            font: bold 24px/1 'Gaegu';
+            padding: 10px 0;
             color: #222;
             margin-bottom: 2vh; }
-          figure section article .inner .txt p {
-            font: 12px/1 'arial';
-            color: #777;
-            margin-bottom: 3vh; }
 
 figure .btnPrev {
   width: 60px;

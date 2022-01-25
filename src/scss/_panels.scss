@@ -1,14 +1,12 @@
 figure{
   width: 100%;
   height: 100vh;
-  background: #FCF6F5;
+  background: $light;
   overflow: hidden;
   position: relative;
 
-
-
   section{
-    width: 20vw;height: 65vh;
+    width: 20vw;height: 55vh;
     position: absolute; left: 50%; top: 150%;
     margin-top:  -32vh;
     margin-left: -10vw;
@@ -20,9 +18,9 @@ figure{
       position: absolute; top: 0; left: 0;
 
       .inner{
-        width: 100%; height: 100%;
+        width: 100%; height: 100%; position: relative;
         background: #ffff;
-        padding: 5vh 2.5vw 8vh;
+        padding: 5vh 3.0vw 8vh;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -30,16 +28,17 @@ figure{
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 
+
         .pic{
-          width: 15vw; height: 15vw;
-          border-radius: 50%;
+          width: 100%; height: 100%;
+          border-radius: 155px;
           background-color: cyan;
           background-repeat: no-repeat;
           background-position: 200%;
           position: relative;
           display: flex; justify-content: center; align-items: center;
 
-          &::before, &::after {
+            &::after {
             content: '';
             display: block;
             width: inherit; height: inherit;
@@ -50,43 +49,17 @@ figure{
             background-position: center;
             background-size: cover;
           }
-
-          &::before{
-            transform: translateY(10%);
-            filter: blur(20px) brightness(1.6);
-          }
-
-          .dot{
-            width: 3vw;
-            height: 3vw;
-            border-radius: 50%;
-            background: #fff;
-            position: relative;
-            z-index: 3;
-            box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
-          }
         }
 
         .txt{
-          text-align: center;
-          position: relative;
-
+          width: 100%; position: relative; text-align: center; 
           h2{
-            font: bold 20px/1 'arial';
+            font: bold 24px/1 'Gaegu'; padding: 10px 0;
             color: #222;
             margin-bottom: 2vh;
           }
-          p{
-            font: 12px/1 'arial';
-            color: #777;
-            margin-bottom: 3vh;
-          }
         }
       }
-
-
     }
   }
-
-
 }
