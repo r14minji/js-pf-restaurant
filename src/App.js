@@ -7,7 +7,8 @@ import { useState } from 'react';
 
 function App() {
 
-  const arr = ["제주앞바다", "돌담길", "해질녘", "성산일출봉", "제주감귤", "조랑말", "화산섬", "바람"];
+  const jeju = ["제주앞바다", "돌담길", "해질녘", "성산일출봉", "제주감귤", "조랑말", "화산섬", "바람"];
+  const arr = ["남산한옥마을", "마포대교", "63빌딩", "롯데월드타워", "경복궁", "한강", "청계천", "서울숲벚꽃길"];
   const deg = 360/arr.length;
   let [txt, setTxt] = useState(arr);
 
