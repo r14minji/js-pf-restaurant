@@ -1,59 +1,92 @@
-main{
+figure{
+  width: 100%;
+  height: 100vh;
+  background: #FCF6F5;
+  overflow: hidden;
+  position: relative;
+
+
+
   section{
-    height: 100vh;
-    perspective: 500px;
-    transform-style: preserve-3d;
-    transform: rotateY(60deg);
+    width: 20vw;height: 65vh;
+    position: absolute; left: 50%; top: 150%;
+    margin-top:  -32vh;
+    margin-left: -10vw;
+    transition: 1s;
 
-    //wrap을 가운데 정렬
-    display: flex; justify-content: center; align-items: center;
+    article{
+      width: 100%;
+      height: 100%;
+      position: absolute; top: 0; left: 0;
 
-    .wrap{
-      width: 220px; height: 200px; 
-      position: relative;
+      .inner{
+        width: 100%; height: 100%;
+        background: #ffff;
+        padding: 5vh 2.5vw 8vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 
-      .item{
-        width: 200px;height: 200px;
-        background: #ddd;
-        position: absolute; top:0; left: 0;
-        //글자 가운데로
-        display: flex; justify-content: center; align-items: center;
-        backface-visibility: hidden;
+        .pic{
+          width: 15vw; height: 15vw;
+          border-radius: 50%;
+          background-color: cyan;
+          background-repeat: no-repeat;
+          background-position: 200%;
+          position: relative;
+          display: flex; justify-content: center; align-items: center;
 
+          &::before, &::after {
+            content: '';
+            display: block;
+            width: inherit; height: inherit;
+            border-radius: inherit;
+            position: absolute; top: 0; left: 0;
+            background-image: inherit;
+            background-repeat: inherit;
+            background-position: center;
+            background-size: cover;
+          }
 
-        //앞으로 나오게 탄젠트값 구함
-  
-        //article별 색상
-        &:nth-of-type(1){
-          background: rgba(200, 235, 160, 0.5);
-          transform: rotateY(0deg)  translateZ(173px);
-        }
-        &:nth-of-type(2){
-          background: rgba(255,255,255,0.5);
-          transform: rotateY(60deg)  translateZ(173px);
-        }
-        &:nth-of-type(3){
-          background: rgba(255,255,255,0.5);
-          transform: rotateY(120deg)  translateZ(173px);
-        }
-        &:nth-of-type(4){
-          background: rgba(255,255,255,0.5);
-          transform: rotateY(180deg)  translateZ(173px);
-        }
-        &:nth-of-type(5){
-          background: rgba(255,255,255,0.5);
-          transform: rotateY(240deg)  translateZ(173px);
-        }
-        &:nth-of-type(6){
-          background: rgba(255,255,255,0.5);
-          transform: rotateY(300deg)  translateZ(173px);
+          &::before{
+            transform: translateY(10%);
+            filter: blur(20px) brightness(1.6);
+          }
+
+          .dot{
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+            z-index: 3;
+            box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+          }
         }
 
-  
-  
+        .txt{
+          text-align: center;
+          position: relative;
+
+          h2{
+            font: bold 20px/1 'arial';
+            color: #222;
+            margin-bottom: 2vh;
+          }
+          p{
+            font: 12px/1 'arial';
+            color: #777;
+            margin-bottom: 3vh;
+          }
+        }
       }
+
+
     }
-
-
   }
+
+
 }

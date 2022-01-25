@@ -2,16 +2,15 @@ function Header(){
   return (
     <>
       <h1>
-        <strong>RESTUARNAT</strong><br />
-        <span>WELLBEING FOOD & HAPPT DINING</span>
+        <strong>travel in korea</strong><br />
+        <span>Let's go on a trip togather</span>
       </h1>
 
       <nav id="gnb">
         <ul>
-          <li>about</li>
-          <li>menu</li>
-          <li>reservation</li>
-          <li>contact</li>
+          <li>Seoul</li>
+          <li>Jeju</li>
+          <li>Bisan</li>
         </ul>
       </nav>
 

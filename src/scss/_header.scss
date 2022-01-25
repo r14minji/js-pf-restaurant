@@ -1,4 +1,4 @@
-main{
+figure{
   h1{
     position: absolute; 
     top: 7vh;
@@ -6,14 +6,14 @@ main{
     font-size: 0;
 
     strong{
-      font: normal 36px/1.4 'Abril Fatface';
-      color: $gold;
-      letter-spacing: 1px;
+      font: normal 36px/1.4 'Luckiest Guy';
+      color: $blue;
+      letter-spacing: 1px;text-transform: uppercase;
     }
     span{
-      font: normal 12px/1 'Titillium Web';
-      opacity: 0.8; letter-spacing: 2px;
-      color: $gold;
+      font: normal 12px/1 'Luckiest Guy';
+      opacity: 0.8; letter-spacing: 5px;
+      color: $blue; text-transform: uppercase; 
     }
   }
 
@@ -29,7 +29,7 @@ main{
       li{
         font: 18px/1 'Titillium Web';
         padding: 5px 10px;
-        color:$gold;
+        color:$blue;
         text-transform: uppercase;
       }
     }

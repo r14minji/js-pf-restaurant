@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Titillium+Web:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Luckiest+Guy&family=Mochiy+Pop+P+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,78 +7,117 @@
 ul, li, ol {
   list-style: none; }
 
-main h1 {
+figure h1 {
   position: absolute;
   top: 7vh;
   left: 4vw;
   font-size: 0; }
-  main h1 strong {
-    font: normal 36px/1.4 'Abril Fatface';
-    color: #BD8F4D;
-    letter-spacing: 1px; }
-  main h1 span {
-    font: normal 12px/1 'Titillium Web';
+  figure h1 strong {
+    font: normal 36px/1.4 'Luckiest Guy';
+    color: #7b9acc;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  figure h1 span {
+    font: normal 12px/1 'Luckiest Guy';
     opacity: 0.8;
-    letter-spacing: 2px;
-    color: #BD8F4D; }
-main nav {
+    letter-spacing: 5px;
+    color: #7b9acc;
+    text-transform: uppercase; }
+figure nav {
   position: absolute;
   top: 11vh;
   right: 4vw;
   font-size: 0; }
-  main nav ul {
+  figure nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-    main nav ul li {
+    figure nav ul li {
       font: 18px/1 'Titillium Web';
       padding: 5px 10px;
-      color: #BD8F4D;
+      color: #7b9acc;
       text-transform: uppercase; }
 
-main section {
+figure {
+  width: 100%;
   height: 100vh;
-  perspective: 500px;
-  transform-style: preserve-3d;
-  transform: rotateY(60deg);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  main section .wrap {
-    width: 220px;
-    height: 200px;
-    position: relative; }
-    main section .wrap .item {
-      width: 200px;
-      height: 200px;
-      background: #ddd;
+  background: #FCF6F5;
+  overflow: hidden;
+  position: relative; }
+  figure section {
+    width: 20vw;
+    height: 65vh;
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    margin-top: -32vh;
+    margin-left: -10vw;
+    transition: 1s; }
+    figure section article {
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
-      left: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      backface-visibility: hidden; }
-      main section .wrap .item:nth-of-type(1) {
-        background: rgba(200, 235, 160, 0.5);
-        transform: rotateY(0deg) translateZ(173px); }
-      main section .wrap .item:nth-of-type(2) {
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotateY(60deg) translateZ(173px); }
-      main section .wrap .item:nth-of-type(3) {
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotateY(120deg) translateZ(173px); }
-      main section .wrap .item:nth-of-type(4) {
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotateY(180deg) translateZ(173px); }
-      main section .wrap .item:nth-of-type(5) {
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotateY(240deg) translateZ(173px); }
-      main section .wrap .item:nth-of-type(6) {
-        background: rgba(255, 255, 255, 0.5);
-        transform: rotateY(300deg) translateZ(173px); }
+      left: 0; }
+      figure section article .inner {
+        width: 100%;
+        height: 100%;
+        background: #ffff;
+        padding: 5vh 2.5vw 8vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); }
+        figure section article .inner .pic {
+          width: 15vw;
+          height: 15vw;
+          border-radius: 50%;
+          background-color: cyan;
+          background-repeat: no-repeat;
+          background-position: 200%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          figure section article .inner .pic::before, figure section article .inner .pic::after {
+            content: '';
+            display: block;
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: inherit;
+            background-repeat: inherit;
+            background-position: center;
+            background-size: cover; }
+          figure section article .inner .pic::before {
+            transform: translateY(10%);
+            filter: blur(20px) brightness(1.6); }
+          figure section article .inner .pic .dot {
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+            z-index: 3;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1); }
+        figure section article .inner .txt {
+          text-align: center;
+          position: relative; }
+          figure section article .inner .txt h2 {
+            font: bold 20px/1 'arial';
+            color: #222;
+            margin-bottom: 2vh; }
+          figure section article .inner .txt p {
+            font: 12px/1 'arial';
+            color: #777;
+            margin-bottom: 3vh; }
 
-main .btnPrev {
+figure .btnPrev {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -89,12 +128,12 @@ main .btnPrev {
   justify-content: center;
   align-items: center;
   cursor: pointer; }
-  main .btnPrev span {
+  figure .btnPrev span {
     font: 11px/1 'arial';
     color: #fff;
     transform: translateX(30%);
     transition: 0.5s; }
-  main .btnPrev::before, main .btnPrev::after {
+  figure .btnPrev::before, figure .btnPrev::after {
     content: "";
     display: block;
     width: 100%;
@@ -105,18 +144,18 @@ main .btnPrev {
     left: 0px;
     transform-origin: left center;
     transition: 0.5s; }
-  main .btnPrev::before {
+  figure .btnPrev::before {
     transform: rotate(-180deg); }
-  main .btnPrev::after {
+  figure .btnPrev::after {
     transform: rotate(180deg); }
-  main .btnPrev:hover span {
+  figure .btnPrev:hover span {
     opacity: 0;
     transform: translateX(100%); }
-  main .btnPrev:hover::before {
+  figure .btnPrev:hover::before {
     transform: rotate(-30deg); }
-  main .btnPrev:hover::after {
+  figure .btnPrev:hover::after {
     transform: rotate(30deg); }
-main .btnNext {
+figure .btnNext {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -127,12 +166,12 @@ main .btnNext {
   justify-content: center;
   align-items: center;
   cursor: pointer; }
-  main .btnNext span {
+  figure .btnNext span {
     font: 11px/1 'arial';
     color: #fff;
     transform: translateX(-30%);
     transition: 0.5s; }
-  main .btnNext::before, main .btnNext::after {
+  figure .btnNext::before, figure .btnNext::after {
     content: "";
     display: block;
     width: 100%;
@@ -143,25 +182,25 @@ main .btnNext {
     left: 0px;
     transform-origin: right center;
     transition: 0.5s; }
-  main .btnNext::before {
+  figure .btnNext::before {
     transform: rotate(180deg); }
-  main .btnNext::after {
+  figure .btnNext::after {
     transform: rotate(-180deg); }
-  main .btnNext:hover span {
+  figure .btnNext:hover span {
     opacity: 0;
     transform: translateX(-100%); }
-  main .btnNext:hover::before {
+  figure .btnNext:hover::before {
     transform: rotate(30deg); }
-  main .btnNext:hover::after {
+  figure .btnNext:hover::after {
     transform: rotate(-30deg); }
 
-main > p {
+figure > p {
   position: absolute;
   bottom: 7vh;
   left: 50%;
   transform: translateX(-50%);
   font: 12px/1 'Titillium Web';
-  color: #BD8F4D;
+  color: #7b9acc;
   letter-spacing: 2px;
   opacity: 0.8; }
 
