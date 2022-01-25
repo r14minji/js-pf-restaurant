@@ -8,12 +8,7 @@ import { useState } from 'react';
 function App() {
   return (
   <main>
-      <Header />
-      <section>
-        <Panels />
-      </section>
-      <Btns />
-      <Footer />
+
   </main>
   );
 }
