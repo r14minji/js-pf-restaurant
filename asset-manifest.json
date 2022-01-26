@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/js-pf-travel/static/css/main.3fbb8acc.css",
+    "main.js": "/js-pf-travel/static/js/main.4ceca4ee.js",
+    "index.html": "/js-pf-travel/index.html",
+    "main.3fbb8acc.css.map": "/js-pf-travel/static/css/main.3fbb8acc.css.map",
+    "main.4ceca4ee.js.map": "/js-pf-travel/static/js/main.4ceca4ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fbb8acc.css",
+    "static/js/main.4ceca4ee.js"
+  ]
+}
