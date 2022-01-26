@@ -10,7 +10,7 @@ function Header(){
         <ul>
           <li>Seoul</li>
           <li>Jeju</li>
-          <li>Bisan</li>
+          <li>Gyeongju</li>
         </ul>
       </nav>
 
