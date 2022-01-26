@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 
-function Header(){
+function Header(props){
+  const seoul = ["남산한옥마을", "마포대교", "63빌딩", "롯데월드타워", "경복궁", "한강", "청계천", "서울숲벚꽃길"];
+  const jeju = ["제주앞바다", "돌담길", "해질녘", "성산일출봉", "제주감귤", "조랑말", "화산섬", "바람"];
+  const gyeongju = ["대릉원", "동궁과월지", "첨성대", "주상절리", "불국사", "석굴암", "첨성대", "경주한옥마을"];
 
   useEffect(()=>{
     var boxes = document.querySelectorAll('#boxes > div');
-  [].forEach.call(boxes, box => {
+    [].forEach.call(boxes, box => {
     box.addEventListener('mousemove', e => {
       document.body.style.setProperty(
         'backgroundColor',
@@ -33,9 +36,15 @@ function Header(){
 
       <nav id="gnb">
         <div id="boxes">
-          <div style={{color: "#f44336"}}>Seoul</div>
-          <div style={{color: "#e91e63"}}>Jeju</div>
-          <div style={{color: "#9c27b0"}}>Gyeongju</div>
+          <div style={{color: "#f44336"}} onClick={()=>{
+            props.getTxt(seoul);
+          }}>Seoul</div>
+          <div style={{color: "#e91e63"}} onClick={()=>{
+            props.getTxt(jeju);
+          }}>Jeju</div>
+          <div style={{color: "#9c27b0"}} onClick={()=>{
+            props.getTxt(gyeongju);
+          }}>Gyeongju</div>
         </div>
       </nav>
 
