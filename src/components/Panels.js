@@ -6,6 +6,7 @@ function Panels(props){
     <article style={rotatePanel}>
     <div className="inner">
       <div className="pic" style={picImg}>
+        Loading...
         <div className="pattern"></div>
       </div>
       <div className="txt">
