@@ -42,18 +42,19 @@ figure nav {
     min-width: 5em;
     min-height: 5em;
     transition: .5s all ease;
-    background: var(--color, #aaa);
+    color: #fff;
     border: 0 solid transparent;
     border-radius: 50%;
     margin: .5em;
     opacity: .7;
     --dx: calc(var(--size) - var(--x));
     --dy: calc(var(--size) - var(--y)); }
-  figure nav body:not([style]) #boxes div:first-child {
-    --x: 84;
-    --y: 75;
-    --size: 128; }
-  figure nav body:not([style]) #boxes div:first-child,
+    figure nav #boxes div:nth-of-type(1) {
+      background: #f44336; }
+    figure nav #boxes div:nth-of-type(2) {
+      background: #e91e63; }
+    figure nav #boxes div:nth-of-type(3) {
+      background: #9c27b0; }
   figure nav #boxes div:hover {
     opacity: 1;
     cursor: pointer;

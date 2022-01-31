@@ -36,13 +36,13 @@ function Header(props){
 
       <nav id="gnb">
         <div id="boxes">
-          <div style={{color: "#f44336"}} onClick={()=>{
+          <div onClick={()=>{
             props.getTxt(seoul);
           }}>Seoul</div>
-          <div style={{color: "#e91e63"}} onClick={()=>{
+          <div onClick={()=>{
             props.getTxt(jeju);
           }}>Jeju</div>
-          <div style={{color: "#9c27b0"}} onClick={()=>{
+          <div onClick={()=>{
             props.getTxt(gyeongju);
           }}>Gyeongju</div>
         </div>
